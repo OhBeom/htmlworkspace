@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 글꼴 */
+         .fontstyle{font-family: 궁서, 돋음;}
+
+        /* 웹 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+        .fontstyle {
+         font-family: 'Fasthand', cursive;
+            }
+
+        /* 글자크기 */
+        /*절대 크기 : px, pt*/
+        /*상대 크기 : em,%  1em = 100% */
+        /* p {font-size: 30px;} */        
+        /* p {font-size: 1em;}  */
+
+        /* 글자 굵기 */
+        /* p {font-weight: bold;} */
+        /* 글자 스타일 */
+        /* p {font-style: italic;} */
+
+        /* p{
+            font-size:100px;
+            font-family:돋움;
+         } */
+
+         /* p{color:red;} */
+         p{text-decoration: underline;} /* 종류 : none,overline,line-through */
+
+         /* 글자에 그림자 효과 */
+         /* text-shadow : 가로거리 세로거리 번짐정도 그림자 색 */
+         /* .shadow1 {
+            text-shadow: 1px 1px;
+            color:orange; 
+         }*/
+
+         /* .shadow2{ 
+            text-shadow: 5px 5px 3px #f00;
+         } */
+
+         /* 글자 간격 */
+         .letter{letter-spacing: 0.5em;}
+
+         /* 줄(행)간격 ---- 늦어서 잘 못들음 나중에 찾아보자*/
+         .line {line-height: 2em;}
+
+         .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 200px;
+         }
+
+         /* 글자가 넘치는 기능 제어 */
+         p{
+            border: 1px solid red;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+         }
+         /* 숨겨진 내용 확인할수있음 */
+         p:hover{
+            overflow: visible;  
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- css의 속성 -->
+    <p>브라우저 기본 글꼴</p>
+    <p class="fontstyle">글꼴을 적용한 상태 Fasthand permanent Marker</p>
+
+    <h1 class ="shadow1">HTML5</h1>
+    <h1 class ="shadow2">HTML5</h1>
+    <h1 class ="letter">HTML5</h1>
+
+    <p>
+        integer elemnetum massa at nulla placerat varius.
+        suspendisse in livero risus, in nterdaum mmassa
+
+    </p>
+
+    <p class="box">
+        가운데 정렬(수직)
+    </p>
+
+    <p>귀리는 베타글루칸(항암 및 면역증강작용을 가지고 있는 불소화성 다당류) 성분을 포함하고 있다.</p>
+
+    
+</body>
+</html> 

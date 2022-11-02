@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--한글이 깨져보이지 않기하기 위해서-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--텍스트 관련 태그들-->
+    제목 표시하기
+    <h1>제목 표시하기</h1> 
+    <h2>제목 표시하기</h2> 
+    <h3>제목 표시하기</h3> 
+    <h4>제목 표시하기</h4> 
+    <h5>제목 표시하기</h5> 
+    <h6>제목 표시하기</h6> 
+
+    안녕하세요<br> <!--br은 브레이크 약자로 줄을 바꿔줌-->
+    저는 홍길동입니다<br>
+    사는곳은 인천 입니다<br>
+
+    <hr> <!--수평선을 그어줌--> <hr /> <!-- 같은 표현  -->
+
+    <p>첫번째 문단</p> <!--p,!p는 문단을 바꿔줌-->
+    <p>두번째 문단</p>
+    <p>세번째 문단</p>
+
+
+    <pre> <!--보이는 그대로 다 표현해줌 왼쪽의 여백까지도-->
+    내가 그의 이름을 불러 주기 전에는
+    그는 다만
+    하나의 몸짓에 지나지 않았다.
+
+    내가 가의 이름을 불러 주었을 때
+    그는 나에게로 와서 
+    꽃이 되었다.
+    </pre>
+
+    홍          길          동<br>  <!--이렇게 띄어쓰기를해도 출력은 이렇게 안나옴-->
+    홍&nbsp;&nbsp;&nbsp;길&nbsp;&nbsp;&nbsp;동 <!-- &nbsp; 하나당 한칸씩 -->
+    <br><br>
+
+    글자강조 <strong>글자강조</strong> <br>
+    <b>글자강조</b> 
+    <br><br>
+
+    글자 기울기 <em>글자 기울기</em> <br>
+    <i>글자 기울기</i> 
+    <br><br>
+
+    <q>인용구문</q> 
+    <br><br>
+
+    <mark>중요구문</mark>
+    <br><br>
+
+    <span>일부 영역에 효과를 주기위해 사용</span> <!--지금은 딱히 티가안남 자세한 설명은 나중에..-->
+    <br><br>
+
+    목록을 표시하는 태그들
+    <!-- ul, ol -->
+    <ul> <!--점으로 목록표시-->
+        <li>JAVA</li>
+        <li>ORACLE</li>
+        <li>HTML</li>
+    </ul>
+
+    <hr>
+
+    <ol type ="a"> <!--숫자로 목록표시, type="a"로 쓰면 알파벳순으로 표시-->
+        <li>JAVA</li>
+        <li>ORACLE</li>
+        <li>HTML</li>
+    </ol>
+
+    <hr>
+<!--ul과 ol을 같이 사용하는법-->
+    <ul>
+        <li> 1일차
+            <ol type = "a">
+                <li>해녀 박물관</li>
+                <li>낚시체험</li>
+            </ol>
+        </li>     
+
+        <li> 2일차
+            <ol>
+                <li>용눈이오름</li>
+                <li>만장굴</li>
+            </ol>
+
+        </li>
+    </ul>
+
+    <dl>
+        <dt>hello</dt>
+        <dd> 
+            1.[감탄사,명사] 언뇽,인사<br>
+            2.[감탄사, 명사]이런 어머나<br>
+            3.[감탄사, 명사]얼씨구<br>
+        </dd>
+    </dl>
+    <br><br>
+
+    <!-- table tag-->
+
+<!-- <figure>
+    <figcaption>
+           <p> 국내 총 생상량</p>
+    </figcaption>  -->
+
+        <table border = "1" height = "500px" width="500px"> <!--border쓰니깐 칸이생김-->
+                                         <!--tr이 행 td가 열을 표현-->
+                                         <!--px(기본값),%-->
+
+            <!-- <caption>
+                <strong>생산년도</strong>
+            </caption> -->
+
+            <tr>
+                <td>1</td><td>2</td><td>3</td><td>4</td>
+            </tr>
+            <tr>
+                <td>5</td><td>6</td><td>7</td><td>8</td>                
+            </tr>
+            <tr>
+                <td>9</td><td>10</td><td>11</td><td>12</td>                
+            </tr>
+            <tr>
+                <td>13</td><td>14</td><td>15</td><td>16</td>                
+            </tr>
+        </table>
+<!-- </figure> -->
+<br><br>
+
+<!-- 행 열 병합 -->
+<table border ="1" height="350" width="350">
+    <tr>
+        <td rowspan="2">1</td><td colspan="2">2</td>
+    </tr>
+    <tr>
+        <td>5</td><td>6</td>                
+    </tr>
+</table>
+<br><br>
+
+<table border ="1" height="350" width="350">
+    <caption>3행 2열</caption>
+    <thead>
+        <tr>
+            <td>1</td><td>2</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</td><td>4</td>                
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>5</td><td>6</td>                
+        </tr>
+    </tfoot>  
+</table>
+<br><br>
+
+
+
+
+</body>
+</html>
